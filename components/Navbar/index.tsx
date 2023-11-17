@@ -3,6 +3,8 @@ import React from 'react'
 import styles from './index.module.scss'
 import navs from './config'
 import Link from 'next/link'
+import { Button } from 'antd'
+import Login from '../Login'
 
 const Navbar: NextPage = () => {
   return (
@@ -15,6 +17,12 @@ const Navbar: NextPage = () => {
               <a>{nav.lable}</a>
             </Link>
           ))}
+        </section>
+        <section className={styles.operationArea}>
+          <Button type="primary">写文章</Button>
+          <Button>登录</Button>
+          <Button>注册</Button>
+          <Login isShow={false}></Login>
         </section>
       </div>
     </>
