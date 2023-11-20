@@ -4,7 +4,7 @@ import React from 'react'
 const Footer: NextPage = () => {
   return (
     <>
-      <div>我是Footer</div>
+      <div>我是Foote22r </div>
     </>
   )
 }
